@@ -1,0 +1,14 @@
+.detail-card{
+    margin-top: 10rem;
+    background-color: #748BF0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    width: 20vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}

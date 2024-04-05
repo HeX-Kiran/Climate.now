@@ -5,3 +5,14 @@
     font-size: 1.5rem;
     transform: translate(-50%,-50%);
 }
+
+.temp-border{
+    border-bottom: 3px dashed black;
+}
+
+.button-hover:hover{
+    
+    transition: all 500ms;
+   scale: 1.1;
+    
+}
