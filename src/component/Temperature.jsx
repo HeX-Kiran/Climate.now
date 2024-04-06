@@ -29,7 +29,7 @@ function Temperature({ updateLocation, currClimateInfo }) {
                 
                  
                     
-                    <img src={getProperTemperatureIcon(weatherInfo?.temperature || 20) } alt="temperature icon" className="w-[70%] icon "></img>
+                    <img src={getProperTemperatureIcon(weatherInfo?.temperature || 20,moment(currClimateInfo?.time).format("hh")) } alt="temperature icon" className="w-[70%] icon "></img>
                     <h1 className="text-8xl uppercase font-bold">{Math.ceil(weatherInfo?.temperature) || 20}<i className="ri-celsius-line temperature-title"></i></h1>
                   
 
