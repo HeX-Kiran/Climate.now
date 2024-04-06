@@ -5,3 +5,16 @@
     align-items: center;
     gap: 1rem;
   }
+
+
+  
+  /* *********************************************** */
+/* MEDIA QUERIES FOR 700 PX */
+/* *********************************************** */
+
+
+@media(max-width:43.75em){
+  .home-grid{
+    grid-template-columns: 1fr;
+  }
+}

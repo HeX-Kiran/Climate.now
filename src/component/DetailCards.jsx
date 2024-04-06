@@ -1,5 +1,7 @@
 import React from 'react'
 import "../styles/detailCard.css"
+
+// COMPONENT THAT RENDERS A WEATHER DETAIL CARD 
 function DetailCards({ property, value }) {
   return (
     <div className='detail-card '>

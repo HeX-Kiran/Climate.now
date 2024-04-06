@@ -1,4 +1,4 @@
-
+import React from "react"
 import { useRef } from "react"
 import "./../styles/temperature.css"
 import getProperTemperatureIcon from "../util/getTemperatureIcon"
@@ -10,6 +10,7 @@ function Temperature({ updateLocation, currClimateInfo }) {
     //extract place and weather info from api response
     const placeInfo = currClimateInfo?.location;
     const weatherInfo = currClimateInfo?.data?.values;
+
 
     // A reference for search box
     const searchText = useRef()
@@ -24,16 +25,23 @@ function Temperature({ updateLocation, currClimateInfo }) {
             </div>
 
             {/* Temperature and Icon */}
-            <div className="flex items-center justify-center gap-16 flex-col temp-border mx-20 py-8">
-                <img src={getProperTemperatureIcon(weatherInfo?.temperature)} alt="temperature icon" className="w-[70%] icon "></img>
-                <h1 className="text-8xl uppercase font-bold">{Math.ceil(weatherInfo?.temperature)}<i className="ri-celsius-line temperature-title"></i></h1>
+            <div className="temperature-img-box flex items-center justify-center gap-16 flex-col temp-border mx-20 py-8">
+                
+                 
+                    
+                    <img src={getProperTemperatureIcon(weatherInfo?.temperature || 20) } alt="temperature icon" className="w-[70%] icon "></img>
+                    <h1 className="text-8xl uppercase font-bold">{Math.ceil(weatherInfo?.temperature) || 20}<i className="ri-celsius-line temperature-title"></i></h1>
+                  
+
+                
+                
             </div>
 
             {/* Place and date */}
             <div className="flex items-center justify-center gap-8 flex-col">
                 <p className="font-bold text-lg date">{moment(currClimateInfo?.time).format("DD-MM-YYYY")}</p>
                 <p className="text-xl italic time">{moment(currClimateInfo?.time).format("LLL")}</p>
-                <h1 className="text-2xl font-bold uppercase temperature-name">{placeInfo?.name}</h1>
+                <h1 className="text-2xl font-bold uppercase temperature-name ">{placeInfo?.name }</h1>
             </div>
 
             {/* Curr location */}
@@ -48,4 +56,4 @@ function Temperature({ updateLocation, currClimateInfo }) {
     )
 }
 
-export default Temperature
+export default React.memo(Temperature)

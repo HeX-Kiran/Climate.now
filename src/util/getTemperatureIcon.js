@@ -6,7 +6,7 @@ import snow from "../assets/images/snow.webp"
 import sun from "../assets/images/sun.webp"
 
 
-
+// FUNCTION TO GET PROPER CLIMATE ICON ACCORDING TO THE TEMPERARTURE
 const getProperTemperatureIcon = (temperature)=>{
     if(temperature > 30) return sun;
     else if(temperature >=25 && temperature<30) return cloudy;

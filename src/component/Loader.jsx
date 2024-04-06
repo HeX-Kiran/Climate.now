@@ -1,6 +1,7 @@
 
 import RotateLoader from "react-spinners/RotateLoader"
 
+//A SIMPLE LOADER COMPONENT
 function Loader({isLoading}) {
 
     // const override  = ({

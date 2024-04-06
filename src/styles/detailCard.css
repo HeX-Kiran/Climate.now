@@ -12,3 +12,63 @@
     justify-content: center;
     border-radius: 25px;
 }
+
+/* *********************************************** */
+/* MEDIA QUERIES FOR 1000 PX */
+/* *********************************************** */
+
+@media(max-width:62.5em){
+    .detail-card{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .detail-card-container{
+        gap: 2rem;
+    }
+  }
+
+
+  /* *********************************************** */
+/* MEDIA QUERIES FOR 800 PX */
+/* *********************************************** */
+
+
+  @media(max-width:50em){
+    .detail-card p{
+        font-size: 1rem;
+    }
+
+    .detail-card h1{
+        font-size: 1.5rem;
+    }
+  }
+
+   /* *********************************************** */
+/* MEDIA QUERIES FOR 700 PX */
+/* *********************************************** */
+
+
+@media(max-width:43.75em){
+    .detail-card{
+        width: 25vw;
+        height: 20vw;
+    }
+}
+
+ /* *********************************************** */
+/* MEDIA QUERIES FOR 500 PX */
+/* *********************************************** */
+
+
+@media(max-width:31.25em){
+    .detail-card p{
+        font-size: 0.8rem;
+    }
+
+    .detail-card h1{
+        font-size: 1.2rem;
+    }
+
+}
+  

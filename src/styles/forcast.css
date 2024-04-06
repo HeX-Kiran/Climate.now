@@ -1,0 +1,14 @@
+.forcast{
+    min-height: 100vh;
+}
+
+ /* *********************************************** */
+/* MEDIA QUERIES FOR 500 PX */
+/* *********************************************** */
+
+
+@media(max-width:31.25em){
+    .date-picker h1{
+        font-size: 1rem;
+    }
+}

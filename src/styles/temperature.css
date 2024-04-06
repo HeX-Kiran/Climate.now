@@ -1,3 +1,7 @@
+.temperature{
+    min-height: 100vh;
+}
+
 .search-btn{
     position: absolute;
     right: 0;
@@ -15,4 +19,28 @@
     transition: all 500ms;
    scale: 1.1;
     
+}
+
+  /* *********************************************** */
+/* MEDIA QUERIES FOR 700 PX */
+/* *********************************************** */
+
+
+@media(max-width:43.75em){
+    .temperature-img-box img{
+        width: 20%;
+    }
+}
+
+
+   /* *********************************************** */
+/* MEDIA QUERIES FOR 500 PX */
+/* *********************************************** */
+
+
+@media(max-width:31.25em){
+    .temperature-img-box img{
+        width: 40%;
+    }
+
 }

@@ -1,6 +1,7 @@
 import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+// AN ENUM FOR TOAST STATUS
 export const TOAST_STATUS = {
     SUCCESS :"success",
     WARNING:"warning",
@@ -9,6 +10,8 @@ export const TOAST_STATUS = {
     DEFAULT :"default"
 }
 
+
+// FUNCTION TO TRIGGER A TOAST FOR ANY SUCCESSFULL OR FAILURE RESPONSES
 export const showToast = (status,message)=>{
 
     switch(status){

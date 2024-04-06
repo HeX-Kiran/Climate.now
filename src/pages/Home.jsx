@@ -26,7 +26,8 @@ function Home() {
 
 
 
-  //FUNCTION TO GET THE REAL TIME TEMPERATURE OF THE USER LOCATION
+  //FUNCTION TO GET THE REAL TIME TEMPERATURE 
+  // THIS API IS CALLED WHENEVER THERE IS CHANGE IN  LOCATION
   const getRealTimeTemperature = async () => {
     // set loading to true
     setLoading(true)
@@ -88,7 +89,7 @@ function Home() {
     <section className='section-home'>
       <main className='home-grid'>
 
-        {<Temperature updateLocation={setLocation} currClimateInfo={currLocationTemperature} />}
+        <Temperature updateLocation={setLocation} currClimateInfo={currLocationTemperature} />
         <Forcast forcastClimate={forcastClimate} />
       </main>
     </section>
