@@ -71,8 +71,8 @@ function Home() {
 
 
   useEffect(() => {
-    getRealTimeTemperature();
-    getForcastTemperature();
+    // getRealTimeTemperature();
+    // getForcastTemperature();
 
   }, [location])
 
